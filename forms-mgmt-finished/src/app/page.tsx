@@ -1,4 +1,4 @@
-import { MailForm } from "./MailForm";
+import { MailForm } from "../components/MailForm";
 
 export default function Home() {
   return (

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: form_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: form_user
+      POSTGRES_PASSWORD: form_pass
+      POSTGRES_DB: form_db
+    volumes:
+      - form_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  form_postgres_data:
